@@ -1,11 +1,65 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="24.7.6">
   <diagram name="第 1 页" id="FU2ZR2eOGPtKlZ-8PCxa">
-    <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="760" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="230" width="310" height="240" as="geometry" />
+        </mxCell>
         <mxCell id="OcxzsE8yDI_8bycYkMa4-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="140" y="230" width="120" height="60" as="geometry" />
+          <mxGeometry x="270" y="210" width="310" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OcxzsE8yDI_8bycYkMa4-2" target="OcxzsE8yDI_8bycYkMa4-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-2" value="入口函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="250" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OcxzsE8yDI_8bycYkMa4-3" target="OcxzsE8yDI_8bycYkMa4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-3" value="出口函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="350" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OcxzsE8yDI_8bycYkMa4-4" target="OcxzsE8yDI_8bycYkMa4-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-4" value="register_chrdev()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OcxzsE8yDI_8bycYkMa4-6" target="OcxzsE8yDI_8bycYkMa4-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-6" value="unregister_chrdev()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-10" value="linux内核" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-11" value="驱动程序" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="180" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-12" value="chrdevs[]设备数组" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="250" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-13" value="struct file{&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;const struct file_operation *f_op;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;};&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="830" y="310" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OcxzsE8yDI_8bycYkMa4-14" target="OcxzsE8yDI_8bycYkMa4-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="495" />
+              <mxPoint x="590" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-14" value="open(dev)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OcxzsE8yDI_8bycYkMa4-20" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;struct file_operation *f_op{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int (*open)&amp;nbsp; (struct inode *, struct file *);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ssize_t (*write) (struct file * ...);&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ssize_t (*read) (struct file * ...)&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="830" y="380" width="250" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
